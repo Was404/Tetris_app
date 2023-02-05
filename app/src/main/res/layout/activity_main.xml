@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/advent_pro_medium"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="72sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/start_btn"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settings_btn"
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/settings_btn"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/quit_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/quit_btn"
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/quit_btn"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
